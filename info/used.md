@@ -1,5 +1,4 @@
 **How it is used:**
 
-Sometimes we don't need the full pathfinding algorithms implementation and can use
-simplified realisation of these algorithms.
-It can be an useful skill to find a simple ways.
+Sometimes we don't need a full pathfinding algorithm implementation and can use
+simplified realization of these algorithms.
