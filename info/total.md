@@ -1,5 +1,5 @@
-Enemies are trying to pass near between buildings and obstacles.
-But should we be worried? Maybe enemy troops will stuck in a dead end.
+Our infiltration squad is attempting to move between the buildings and obstacles in maze-like enemy base.
+Central intelligence is worried that the infiltration team will get stuck in one of the many dead ends around the base.
 
 You are given a matrix (2D array) and the coordinates (row and column) of two cells with the same value.
 The matrix consists of digits. You may move to neighbouring cells either horizontally or
@@ -41,9 +41,8 @@ can_pass(((0, 0, 0, 0, 0, 0),
 ```
 **How it is used:**
 
-Sometimes we don't need the full pathfinding algorithms implementation and can use
-simplified realisation of these algorithms.
-It can be an useful skill to find a simple ways.
+Sometimes we don't need a full pathfinding algorithm implementation and can use
+simplified realization of these algorithms.
 
 **Precondition:**
 ```python
