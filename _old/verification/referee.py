@@ -19,7 +19,7 @@ api.add_listener(
     ON_CONNECT,
 
     CheckiOReferee(tests=TESTS,
-                   function_name="can_pass",
+                   DEFAULT_FUNCTION_NAME="can_pass",
                    cover_code={
                        'python-27': cover,  # or None
                        'python-3': cover
