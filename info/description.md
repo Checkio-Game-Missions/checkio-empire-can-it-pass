@@ -8,4 +8,26 @@ Coordinates are represented as a tuple with two numbers: row and column.
 The result should be any value which can be converted into a boolean. If a path exists, then return True.
 Return False if there is none.
 
-![Scheme](can-jump-through.svg)
+```
+From [1, 1] to [5, 5] == true
+ 0 * 0   5   4   0
+ *             
+ 0   1   5   0   0
+ *             
+ 0 * 0 * 0   7   2
+     *   *     
+ 8   0 * 0 * 0 * 0
+         *       *               
+ 0   9   0   1   0
+ 
+From [1, 1] to [1, 5] == true
+ 0 * 0   5   4   0
+ *                             
+ 0   1   5   0   0
+ *             
+ 0 * 0 * 0   7   2
+     *   *     
+ 8   0 * 0   4   0
+         *                       
+ 0   9   0   1   0
+```
