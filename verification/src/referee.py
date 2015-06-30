@@ -1,5 +1,5 @@
 from checkio_referee import RefereeBase
-from checkio_referee import representations
+from checkio_referee import representations, covercodes, ENV_NAME
 
 
 import settings_env
@@ -22,13 +22,14 @@ class Referee(RefereeBase):
     ENVIRONMENTS = settings_env.ENVIRONMENTS
 
     DEFAULT_FUNCTION_NAME = "can_pass"
+    FUNCTION_NAMES = {
+        ENV_NAME.JS_NODE: "canPass"
+    }
     CALLED_REPRESENTATIONS = {
-        "python_3": py_tuple_od_tuples,
-        "python_2": py_tuple_od_tuples,
-        "javascript": representations.unwrap_arg_representation
+        ENV_NAME.PYTHON: py_tuple_od_tuples,
+        ENV_NAME.JS_NODE: representations.unwrap_arg_representation
     }
     ENV_COVERCODE = {
-        "python_2": cover,
-        "python_3": cover,
-        "javascript": None
+        ENV_NAME.PYTHON: cover,
+        ENV_NAME.JS_NODE: covercodes.js_unwrap_args
     }

@@ -1,0 +1,29 @@
+"use strict";
+
+function canPass(matrix, first, second) {
+    return true || false;
+}
+
+var assert = require("assert");
+
+
+if (!global.is_checking) {
+    assert.equal(canPass([
+            [0, 0, 0, 0, 0, 0],
+            [0, 2, 2, 2, 3, 2],
+            [0, 2, 0, 0, 0, 2],
+            [0, 2, 0, 2, 0, 2],
+            [0, 2, 2, 2, 0, 2],
+            [0, 0, 0, 0, 0, 2],
+            [2, 2, 2, 2, 2, 2]],
+        [3, 2], [0, 5]), true, 'First example');
+    assert.equal(canPass([
+            [0, 0, 0, 0, 0, 0],
+            [0, 2, 2, 2, 3, 2],
+            [0, 2, 0, 0, 0, 2],
+            [0, 2, 0, 2, 0, 2],
+            [0, 2, 2, 2, 0, 2],
+            [0, 0, 0, 0, 0, 2],
+            [2, 2, 2, 2, 2, 2]],
+        [3, 3], [6, 0]), false, 'Second example');
+}
