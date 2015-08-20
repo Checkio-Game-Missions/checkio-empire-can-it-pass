@@ -19,3 +19,5 @@ if __name__ == '__main__':
                          (0, 0, 0, 0, 0, 2),
                          (2, 2, 2, 2, 2, 2),),
                         (3, 3), (6, 0)), 'Second example'
+
+    print("Earn cool rewards by using the 'Check' button!")
