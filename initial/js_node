@@ -26,4 +26,6 @@ if (!global.is_checking) {
             [0, 0, 0, 0, 0, 2],
             [2, 2, 2, 2, 2, 2]],
         [3, 3], [6, 0]), false, 'Second example');
+    console.log("Code's finished? Earn rewards by clicking 'Check' to review your tests!");
 }
+
